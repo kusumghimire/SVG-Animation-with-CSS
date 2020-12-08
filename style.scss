@@ -15,12 +15,26 @@ animation: wheel 2s infinite linear;
 transform-origin: center;
 transform-box: fill-box;
 }
+#boy-bicycle{
+    animation: bike 1s ease-in-out infinite ;
+transform-origin: bottom;
+}
 
 @keyframes wheel{
-    to{
+    from{
         transform: rotateZ(0deg);
     }
-    from{
+    to{
         transform: rotateZ(360deg);
+    }
+}
+
+@keyframes bike{
+    from{
+transform: rotateX(0);
+    }
+    to{
+transform: rotateX(20deg);
+         
     }
 }
