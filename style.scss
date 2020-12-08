@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+svg{
+    width: 50%;
+}
+#right-wheel,
+#left-wheel{
+animation: wheel 2s infinite linear;
+transform-origin: center;
+transform-box: fill-box;
+}
+
+@keyframes wheel{
+    to{
+        transform: rotateZ(0deg);
+    }
+    from{
+        transform: rotateZ(360deg);
+    }
+}
