@@ -29,6 +29,14 @@ svg {
           transform-origin: bottom;
 }
 
+#hats {
+  -webkit-animation: hat 1s ease-in-out infinite;
+          animation: hat 1s ease-in-out infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
 @-webkit-keyframes wheel {
   from {
     -webkit-transform: rotateZ(0deg);
@@ -70,6 +78,28 @@ svg {
   to {
     -webkit-transform: rotateX(20deg);
             transform: rotateX(20deg);
+  }
+}
+
+@-webkit-keyframes hat {
+  from {
+    -webkit-transform: translateY(0%) rotateZ(0deg);
+            transform: translateY(0%) rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: translateY(40%) rotateZ(20deg);
+            transform: translateY(40%) rotateZ(20deg);
+  }
+}
+
+@keyframes hat {
+  from {
+    -webkit-transform: translateY(0%) rotateZ(0deg);
+            transform: translateY(0%) rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: translateY(40%) rotateZ(20deg);
+            transform: translateY(40%) rotateZ(20deg);
   }
 }
 /*# sourceMappingURL=style.css.map */
